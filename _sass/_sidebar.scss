@@ -11,6 +11,9 @@
           transform: translate3d(0, 0 , 0);
 
   @include clearfix();
+  /*Edit begins: for sticky/floating navbar*/
+  padding-top: $masthead-height;
+  /*Edit ends: for sticky/floating navbar*/ 
   margin-bottom: 1em;
 
   @include breakpoint($large) {

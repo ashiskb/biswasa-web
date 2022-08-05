@@ -6,6 +6,9 @@
   @include container;
   @include clearfix;
   margin-top: 2em;
+  /* Edit begins: for sticky/floating navbar*/
+  padding-top: $masthead-height;
+  /* Edit ends: for sticky/floating navbar*/
   padding-left: 1em;
   padding-right: 1em;
   animation: intro 0.3s both;

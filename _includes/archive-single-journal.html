@@ -25,7 +25,7 @@
           alt="">
       </div>
     {% endif %}
-    {% if post.collection == 'publications' %}
+    {% if post.collection == 'publications'%}
     {% else %}
       <h2 class="archive__item-title" itemprop="headline">
         {% if post.link %}
@@ -48,7 +48,8 @@
       {% endif %}
       
       <!-- citation and icon code -->
-      {% if post.collection=='publications' and post.citation %}
+      {% if post.collection=='publications' and post.citation and post.pub_type=='conference' %}
+      {% elsif post.collection=='publications' and post.citation and post.pub_type=='journal' %}
         {{ post.citation }}
         <br>
         {% if post.link %}
@@ -63,25 +64,10 @@
         {% if post.github %}
           <a href="{{ post.github }}" target="_blank"><i class="fab fa-fw fa-github zoom" aria-hidden="true"></i></a>
         {% endif %}
+        {% if post.bib_file %}
+          <a href="{{ post.bib_file }}" target="_blank"><i class="fa fa-download zoom" aria-hidden="true"></i></a>
+        {% endif %}
       {% else %}
-        <p>
-        {% if post.citation %}
-        {{ post.citation }}
-        {% endif %}
-        <br>
-        {% if post.link %}
-          <a href="{{ post.link }}"><i class="fas fa-fw fa-link zoom" aria-hidden="true"></i></a>
-        {% endif %}
-        {% if post.paperurl %}
-          <a href="{{ post.paperurl }}"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i></a>
-        {% endif %}
-        {% if post.code %}
-          <a href="{{ post.code }}"><i class="fas fa-fw fa-code zoom" aria-hidden="true"></i></a>
-        {% endif %}
-        {% if post.github %}
-          <a href="{{ post.github }}"><i class="fab fa-fw fa-github zoom" aria-hidden="true"></i></a>
-        {% endif %}
-        </p>
       {% endif %}
     {% elsif post.collection == 'posts' and post.date %}
       <p class="page__date"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
