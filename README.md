@@ -42,21 +42,65 @@ Since Jekyll is a static site generator, it has to build the site before we can 
 * `jekyll build` - Builds the site and outputs a static site to a directory called `_site`.
 * `jekyll serve` - Does jekyll build and runs it on a local web server at [http://localhost:4000](http://localhost:4000), rebuilding the site any time you make a change.
 
-## Add posts
+## Update the homepage
 
-It's very easy to add post. All the posts are located in `_posts` folder. It arrangement is based on date. Each post can be written in markdown format. You just have to state headers before writing: `title`, `description` and `categories`. `description` will be shown when you share on social media like Facebook or twitter. See the following headers:
+It's easy. Just update the `_pages/about.md`. It's all markdown. Please don't remove the header section in the file.
+
+## Add publications
+It is better if I list the steps so to understand the order of activities around it:
+1. If you want to modify the schema of the `publications` page, you may need to update the `_pages/publications.md` file. For instance, having a brief introduction, a journal section, a conference section, you may want to look at the current configurations placed in the page. To be creative, you may also want to play with the `_includes/archive-single-journal.html` and `_includes/archive-single-conference.html` files to understand how the schema is formatted.
+2. If you are happy with the publication page schema, just add 2 files for each publication entry that you want to appear on the publications page: one `*.md` file in the `_publications/` directory and one `*.bib` file in the `files/bib_files/` directory (optional).
+
+### About the `_publications/` directory
+Add to `_publications/` directory an `*.md` file, say `_publications/2023-01-31-ABCD-biswas.md`, denoting that you are talking about a publication from 31st January, 2023, at venue/publisher `ABCD`, and the first author's last name `biswas`. This is the convention used to store all publication data in the `_publications/` directory. In case, you do not know the specific date, put `2023-01-01`, or a rather arbitrary date. Also, the format is important as the date is used to sort (in reverse order) to appear on the page. Please don't forget the `dashes -`, that are not `underscores`.
+
+The content of such an `*.md` file needs to have at least a header section (currently) with the following:
 
 ```
 ---
-title: Summer School in Computational Sensory-Motor Neuroscience (CoSMo)
-description: all links to CoSMo summer school in computational neuroscience materials
-categories: scientists
+title: "title of the paper"
+collection: publications
+pub_type: conference
+permalink: /publication/2022-BCB-pastorino
+date: 2022-06-23
+venue: 'venue/publisher'
+paperurl: 'the_url'
+link: 'doi url'
+code: 'link to your code'
+github: 'link to the github repo'
+citation: 'APA citation'
+bib_file: '/files/bib_files/2022-BCB-pastorino.bib'
+---
+
+```
+Please note that, currently the `publications.md` is designed in a way (according to the schema) so that the value of the `citation` field is used to populate the publication page, not the `title`, or `date`, or `venue`. These 3 fields might be used in future versions! 
+
+The `paperurl`, `link`, `bib_file` are optional. But, please try to be consistent about the `bib_file`. Grab it from an easier resource like [Google Scholar](https://scholar.google.com) and put it in `files/bib_files/` directory, and mention it here.  `paperurl` is supposed to point at the publication webpage, and `link` to have the `DOI` link that may eventually point to the `paperurl`, but `DOI` links are a bit more reliable than the `paperurl`. Also, you can share the link to your source codes in the `code` field. Additionally, if you would want to share the `github` repository, if different from the link in the `code`, share it in the `github` field. All these links will appear below the `citation` entry with their own little icons: `fa-link`, `fa-file-pdf`, `fa-code`, `fa-github`, `fa-download` from the [Font Awesome library](https://aksakalli.github.io/jekyll-doc-theme/docs/font-awesome/).
+
+Currently, only the header information is used. In the future version, there is a possibility to read and use the body section of the `*.md` file in the `_publicatinos` directory.
+### About the `files/bib_files/` directory
+Please have a physical `*.bib` file in this directory for each entry of publication that you put in the `_publications` directory. It's also a good idea to have a file naming convention, although not as strict as in the `_publications/` as you would be using the path information in the corresponding `*.md` file. Currently, I used `2023-ABCD-biswas.bib` style formatting. The year goes first, then the venue/publisher, and finally the lastname. You may use any tool to obtain the `bib` files. 
+
+## Update the Navigation bar
+Add/subtract/revise items on the navigation bar by simply updating the `_data/navigation.yml` file.
+
+## Update about Teaching
+You taught a course, or planning to teach a course in the future, this is the section for you. You need to add one file (`*.md`) for each entry in the `_teaching/` directory. Entries will be listed in reverse chronological order. Please adhere to the file naming convention as in `2017-fall-OOP-2312.md`, where `OOP` is the acronym for the course `Objective Oriented Programming`, annd `2312` might be the course number for you to identify easily later. Make sure it has the following header section, and the rest of it is description of the course in markdown -- use your imagination what you would want to tell your audience about the course. That might even be your course-website. Trust me, it's very possible. Just update just a single `*.md` file.
+
+Make sure to assign `teaching` to the `collection` key in the header. If you put a future `date` in the `date` key, the course will be listed in the teaching page, but the content won't be accessible. This might be a desirable feature to a few.
+
+```
+---
+title: "CSCI-2312: Object Oriented Programming"
+collection: teaching
+type: "Undergraduate course"
+permalink: /teaching/2017-fall-OOP-2312
+venue: "PLAZA-112"
+date: 2017-08-21
+location: "University of Colorado Denver"
 ---
 ```
-
-We have 4 categories: `scientists`, `students`, `discussion`, `blog` you can choose and this will be rendered to different location.
-
-
+Like other `pages`, the teaching page schema could also be fine-tuned as you desire. Everything you need is in the `_pages/teaching.html`, and hard-core configurations can be found in the `_includes/archive-single.html` file.
 ## How to add posts
 
 
