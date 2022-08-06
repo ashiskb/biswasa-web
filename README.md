@@ -101,6 +101,25 @@ location: "University of Colorado Denver"
 ---
 ```
 Like other `pages`, the teaching page schema could also be fine-tuned as you desire. Everything you need is in the `_pages/teaching.html`, and hard-core configurations can be found in the `_includes/archive-single.html` file.
+
+## Adding a Talk
+Just add a talk page (`*.md` file) in the `_talks/` directory. The naming convention of the file was used for consistency: `yyyy-mm-dd-talk-XXX.md`, where `yyyy`, `mm`, `dd` are year, month and day of the talk. `XXX` is the acronym/representation of the venue of the talk. 
+
+The header section of the talk file has couple of important fields used to populate the talks page:
+
+```
+---
+title: "Data Science Competitions: A know-how to participate"
+collection: talks
+type: "Talk"
+permalink: /talks/2021-08-27-talk-DSSymposium
+venue: "CU Denver, Data Science Symposium"
+date: 2021-08-27
+location: "Denver, Colorado, USA."
+---
+```
+Please make sure the `collection: talks` are set. Following the header section, it is all markdown: write whatever you want to let your audience read about the talk.
+
 ## How to add posts
 
 
