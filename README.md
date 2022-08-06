@@ -120,6 +120,11 @@ location: "Denver, Colorado, USA."
 ```
 Please make sure the `collection: talks` are set. Following the header section, it is all markdown: write whatever you want to let your audience read about the talk.
 
+
+## How to deploy in your own web-server
+* Update the `url` field of the `_config.dev.yml` to appropriate setting.
+* Do not build with `jekyll serve`. Only use `jekyll build`. And upload the content of the `_site/` directory.
+
 ## How to add posts
 
 
