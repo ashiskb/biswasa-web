@@ -233,3 +233,5 @@ Thanks to Prof. Konrad Kording for the [Jekyll site template](http://kordinglab.
     * Step 2: add a page in the `_pages/` directory for the particular type of collection. Please look how I added the `_pages/funding.md` file. It pretty much is a decorator of the page that you would like to see, including a schema file to use.
     * Step 3: The detail schema that you are including in the `_pages/funding.md` file, needs to be created in the `_includes/archive-single-funding.html`. I borrowed a lot of the decorations from other schema files.
     * Step 4: now, add one `*.md` file for each type of the new `collection` that you desire.
+* **Q** My `git-remote-https` process freezes in MacOSX during syncing. What should I do?
+  * **A** Try `git config http.postBuffer 16384`. Then, manually push to remote.
