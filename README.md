@@ -168,8 +168,8 @@ Then, you write detail information of this publication, including abstract, code
 Thanks to Prof. Konrad Kording for the [Jekyll site template](http://kordinglab.com).
 
 ## Frequently Asked Questions
-* How can I add something like `This page was last modified at xxx` at the footer of all Jekyll pages?
-  * **Fix**: 
+* **Q** How can I add something like `This page was last modified at xxx` at the footer of all Jekyll pages?
+* **A**: 
     * *Step 1*: Please make sure to install the plugin with `gem` before listing the plugin below at the command line at the current working directory: `gem install jekyll-last-modified-at`
     * *Step 2*: List the plugin in the `Gemfile` in the following group:
   
@@ -227,4 +227,9 @@ Thanks to Prof. Konrad Kording for the [Jekyll site template](http://kordinglab.
     </html>
     ```
     * *Step 5*: Done. The plugin `jekyll-last-modified-at` determines a page's last modified date by checking the last Git `commit` date of the source files. In the event Git is not available, the file's `mtime` is used.
- 
+* **Q** How can I add a new `collection` so that Jekyll would scan through all its contents and populate a page similar to how `publications`, `talks` pages work?
+  * **A** These are typical steps. Be sure to check how I added the `funding` collection in the repo.
+    * Step 1: add the collection entry in the `_config.yml` file. In that file you will find a section something like below. Look how I added the `funding` collection there. It tells Jekyll to look for a `_funding/` directory and the files within.
+    * Step 2: add a page in the `_pages/` directory for the particular type of collection. Please look how I added the `_pages/funding.md` file. It pretty much is a decorator of the page that you would like to see, including a schema file to use.
+    * Step 3: The detail schema that you are including in the `_pages/funding.md` file, needs to be created in the `_includes/archive-single-funding.html`. I borrowed a lot of the decorations from other schema files.
+    * Step 4: now, add one `*.md` file for each type of the new `collection` that you desire.
