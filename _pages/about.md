@@ -20,7 +20,7 @@ I earned my Ph.D in Computer Science and Engineering from the [University of Tex
   - Majed Balkheer
 * **MS Students**
   - Matthew Michaelis
-* **Graduate MS Students**
+* **Graduated MS Students**
   * Mohammed Mahdi
     - MS thesis: Protein Phosphorylation Site Prediction using Deep Learning approach (Fall 2018)
     - First employment after graduation: Research scientist at the Ministry of Education, Iraq.
@@ -28,7 +28,7 @@ I earned my Ph.D in Computer Science and Engineering from the [University of Tex
     - MS thesis: Identification of Metastatic tissue in Histopathologic scans of lymph node sections. (Spring 2020)
     - First employment after graduation: Amazon
   * Zhelin Yu
-    - Firest employment after graduation: Oracle
+    - First employment after graduation: Oracle
   * Jian Peng
     - MS thesis: 3D CNN data integration platform for ADHD detection (Fall 2019)
     - First employment after graduation: his own startup called `InHouse`.
