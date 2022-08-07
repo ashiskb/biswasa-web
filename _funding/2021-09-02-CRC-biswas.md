@@ -1,7 +1,7 @@
 ---
 title: "Examining STEM majors’ Attrition using Machine Common Sense Reasoning in Online Learning Environments"
 collection: funding
-permalink: /funding/2021-CRC-biswas
+permalink: /funding/2021-CRC-biswas/
 date: 2021-09-21
 venue: 'CU Denver'
 link: 'https://crcdenver.wordpress.com/2022/04/18/crc-fellows-talk-04-28-22-11-am-via-zoom/'

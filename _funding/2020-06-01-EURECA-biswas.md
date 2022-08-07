@@ -1,7 +1,7 @@
 ---
 title: "EUReCA! Research Assistant in Cyberlearning Technology Development"
 collection: funding
-permalink: /funding/2020-EURECA-biswas
+permalink: /funding/2020-EURECA-biswas/
 date: 2020-06-01
 venue: 'CU Denver'
 link: 'https://www.ucdenver.edu/lynxconnect/undergraduate-research/jobs#ac-eurca-student-assistants-01'

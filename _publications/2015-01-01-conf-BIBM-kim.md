@@ -2,7 +2,7 @@
 title: "Integrative approach for inference of gene regulatory networks using lasso-based random featuring and application to Psychiatric disorders"
 collection: publications
 pub_type: conference
-permalink: /publication/2015-BIBM-kim
+permalink: /publication/2015-BIBM-kim/
 date: 2015-01-01
 venue: 'IEEE International Conference on Bioinformatics and Biomedicine (BIBM)'
 paperurl: 'https://dl.acm.org/doi/abs/10.1109/BIBM.2015.7359672'

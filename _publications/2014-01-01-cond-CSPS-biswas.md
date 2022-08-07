@@ -2,7 +2,7 @@
 title: "An Information Integration Approach for Classifying Coding and Non-Coding Genomic Data"
 collection: publications
 pub_type: conference
-permalink: /publication/2014-CSPS-biswas
+permalink: /publication/2014-CSPS-biswas/
 date: 2014-01-01
 venue: 'The Second International Conference on Communications, Signal Processing, and System'
 paperurl: 'https://link.springer.com/chapter/10.1007/978-3-319-00536-2_125'

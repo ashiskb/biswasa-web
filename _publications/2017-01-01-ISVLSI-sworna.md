@@ -2,7 +2,7 @@
 title: "An Efficient Design of an FPGA-Based Multiplier Using LUT Merging Theorem"
 collection: publications
 pub_type: conference
-permalink: /publication/2018-ISVLSI-sworna
+permalink: /publication/2018-ISVLSI-sworna/
 date: 2017-01-01
 venue: 'IEEE Computer Society Annual Symposium on VLSI (ISVLSI)'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/7987505'

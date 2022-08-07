@@ -2,7 +2,7 @@
 title: "A multi-label classification framework to predict disease associations of long non-coding RNAs (lncRNAs)"
 collection: publications
 pub_type: conference
-permalink: /publication/2015-CSPS-biswas
+permalink: /publication/2015-CSPS-biswas/
 date: 2015-01-01
 venue: 'Third International Conference on Communications, Signal Processing, and Systems'
 paperurl: 'https://link.springer.com/chapter/10.1007/978-3-319-08991-1_86'

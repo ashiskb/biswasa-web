@@ -2,7 +2,7 @@
 title: "Hey ML, what can you do for me?"
 collection: publications
 pub_type: conference
-permalink: /publication/2020-AIKE-pastorino
+permalink: /publication/2020-AIKE-pastorino/
 date: 2020-01-01
 venue: 'IEEE Third International Conference on Artificial Intelligence and Knowledge Engineering (AIKE)'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/9355481'

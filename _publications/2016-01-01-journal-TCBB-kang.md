@@ -2,7 +2,7 @@
 title: "Multi-block bipartite graph for integrative genomic analysis"
 collection: publications
 pub_type: journal
-permalink: /publication/2016-TCBB-kang
+permalink: /publication/2016-TCBB-kang/
 date: 2016-01-01
 venue: 'IEEE/ACM TCBB'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/7513454'

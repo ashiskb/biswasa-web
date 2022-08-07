@@ -2,7 +2,7 @@
 title: "Efficacy of novel Summation-based Synergetic Artificial Neural Network in ADHD diagnosis"
 collection: publications
 pub_type: journal
-permalink: /publication/2021-MLWA-peng
+permalink: /publication/2021-MLWA-peng/
 date: 2019-10-01
 venue: 'Machine Learning with Applications'
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S2666827021000608'

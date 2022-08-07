@@ -2,7 +2,7 @@
 title: "TexAnASD: Text Analytics for ASD Risk Gene Predictions"
 collection: publications
 pub_type: conference
-permalink: /publication/2019-BIBM-pastorino
+permalink: /publication/2019-BIBM-pastorino/
 date: 2019-01-01
 venue: 'IEEE International Conference on Bioinformatics and Biomedicine (BIBM) '
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/8983107'

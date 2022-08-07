@@ -2,7 +2,7 @@
 title: "Stable solution to l-2,1-based robust inductive matrix completion and its application in linking long noncoding RNAs to human diseases"
 collection: publications
 pub_type: journal
-permalink: /publication/2017-BMCMedGenomics-biswas
+permalink: /publication/2017-BMCMedGenomics-biswas/
 date: 2017-01-01
 venue: 'BMC Medical Genomics, 10(5)'
 paperurl: 'https://link.springer.com/article/10.1186/s12920-017-0310-1'

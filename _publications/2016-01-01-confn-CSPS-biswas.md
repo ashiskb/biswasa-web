@@ -2,7 +2,7 @@
 title: "Improving Consensus Hierarchical Clustering Framework"
 collection: publications
 pub_type: conference
-permalink: /publication/2016-CSPS-biswas
+permalink: /publication/2016-CSPS-biswas/
 date: 2016-01-01
 venue: 'International Conference on Communications, Signal Processing, and Systems'
 paperurl: 'https://link.springer.com/chapter/10.1007/978-3-662-49831-6_81'

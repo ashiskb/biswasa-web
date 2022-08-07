@@ -46,6 +46,11 @@ Since Jekyll is a static site generator, it has to build the site before we can 
 
 It's easy. Just update the `_pages/about.md`. It's all markdown. Please don't remove the header section in the file.
 
+## A piece of advice on the `permalink`
+Please append a trailing `/` forward-slash after each permalink to encourage Jekyll to create a directory rather than referring to files. Trust me, it helps.
+
+## Another piece of advice on `_site/`
+After the `jekyll build`, please investigate the structure of the files, and folders, and how all the pieces are stitch together to work as the whole website. And, please do remember, the pages under `_site/` are all static, meaning the entire website can very well be understood by a kid!
 ## Add publications
 It is better if I list the steps so to understand the order of activities around it:
 1. If you want to modify the schema of the `publications` page, you may need to update the `_pages/publications.md` file. For instance, having a brief introduction, a journal section, a conference section, you may want to look at the current configurations placed in the page. To be creative, you may also want to play with the `_includes/archive-single-journal.html` and `_includes/archive-single-conference.html` files to understand how the schema is formatted.

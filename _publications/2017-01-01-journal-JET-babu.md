@@ -2,7 +2,7 @@
 title: "Efficient techniques for fault detection and correction of reversible circuits. "
 collection: publications
 pub_type: journal
-permalink: /publication/2017-JET-babu
+permalink: /publication/2017-JET-babu/
 date: 2017-01-01
 venue: 'Journal of Electronic Testing'
 paperurl: 'https://link.springer.com/article/10.1007/s10836-017-5679-4'

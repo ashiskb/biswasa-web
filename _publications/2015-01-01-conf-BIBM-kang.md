@@ -2,7 +2,7 @@
 title: "An integrative genomic study for multimodal genomic data using multi-block bipartite graph"
 collection: publications
 pub_type: conference
-permalink: /publication/2015-BIBM-kang
+permalink: /publication/2015-BIBM-kang/
 date: 2015-01-01
 venue: 'IEEE International Conference on Bioinformatics and Biomedicine (BIBM) '
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/7359744'

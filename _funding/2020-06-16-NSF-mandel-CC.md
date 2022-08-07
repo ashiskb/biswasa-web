@@ -1,7 +1,7 @@
 ---
 title: "CC* Compute: Accelerating Science and Education by Campus and Grid Computing"
 collection: funding
-permalink: /funding/2020-NSFCC-mandel
+permalink: /funding/2020-NSFCC-mandel/
 date: 2020-06-16
 venue: 'CU Denver'
 link: 'https://www.nsf.gov/awardsearch/showAward?AWD_ID=2019089'

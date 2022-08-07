@@ -2,7 +2,7 @@
 title: "Low‐power and area efficient binary coded decimal adder design using a look up table‐based field programmable gate array"
 collection: publications
 pub_type: journal
-permalink: /publication/2016-IETCDS-sworna
+permalink: /publication/2016-IETCDS-sworna/
 date: 2016-01-01
 venue: 'IET Circuits, Devices and Systems'
 paperurl: 'https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/iet-cds.2015.0213'

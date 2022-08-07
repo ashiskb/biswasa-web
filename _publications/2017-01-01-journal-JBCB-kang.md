@@ -2,7 +2,7 @@
 title: "Effects of low dose ionizing radiation on DNA damage-caused pathways by reverse-phase protein array and Bayesian networks"
 collection: publications
 pub_type: journal
-permalink: /publication/2017-JBCB-kang
+permalink: /publication/2017-JBCB-kang/
 date: 2017-01-01
 venue: 'JBCB'
 paperurl: 'https://www.worldscientific.com/doi/abs/10.1142/S0219720017500068'

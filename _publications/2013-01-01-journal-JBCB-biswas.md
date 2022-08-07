@@ -2,7 +2,7 @@
 title: "CNCTDiscriminator: coding and noncoding transcript discriminator—an excursion through hypothesis learning and ensemble learning approaches"
 collection: publications
 pub_type: journal
-permalink: /publication/2013-JBCB-biswas
+permalink: /publication/2013-JBCB-biswas/
 date: 2013-01-01
 venue: 'Journal of bioinformatics and computational biology'
 paperurl: 'https://www.worldscientific.com/doi/abs/10.1142/S021972001342002X'

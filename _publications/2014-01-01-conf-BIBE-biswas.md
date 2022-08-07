@@ -2,7 +2,7 @@
 title: "NMF-based LncRNA-disease association inference and Bi-clustering"
 collection: publications
 pub_type: conference
-permalink: /publication/2014-BIBE-biswas
+permalink: /publication/2014-BIBE-biswas/
 date: 2014-01-01
 venue: 'IEEE International Conference on Bioinformatics and Bioengineering'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/7033565'

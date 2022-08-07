@@ -2,7 +2,7 @@
 title: "Efficient approaches for designing reversible binary coded decimal adders"
 collection: publications
 pub_type: journal
-permalink: /publication/2008-MEJ-biswas
+permalink: /publication/2008-MEJ-biswas/
 date: 2008-01-01
 venue: 'Microelctronics Journal'
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S0026269208001791'

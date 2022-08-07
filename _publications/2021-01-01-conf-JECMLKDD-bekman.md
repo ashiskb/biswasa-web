@@ -2,7 +2,7 @@
 title: "Practical Black Box Model Inversion Attacks Against Neural Nets."
 collection: publications
 pub_type: conference
-permalink: /publication/2021-JECMLKDD-bekman
+permalink: /publication/2021-JECMLKDD-bekman/
 date: 2021-01-01
 venue: 'Joint European Conference on Machine Learning and Knowledge Discovery in Databases'
 paperurl: 'https://link.springer.com/chapter/10.1007/978-3-030-93733-1_3'

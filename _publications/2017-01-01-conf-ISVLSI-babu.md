@@ -2,7 +2,7 @@
 title: "Area and delay efficient design of a quantum bit string comparator"
 collection: publications
 pub_type: conference
-permalink: /publication/2016-ISVLSI-babu
+permalink: /publication/2016-ISVLSI-babu/
 date: 2017-01-01
 venue: 'IEEE Computer Society Annual Symposium on VLSI (ISVLSI)'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/7987494'

@@ -2,7 +2,7 @@
 title: "LiDiAimc: LincRNA-disease associations through inductive matrix completion"
 collection: publications
 pub_type: conference
-permalink: /publication/2017-BIBM-biswas
+permalink: /publication/2017-BIBM-biswas/
 date: 2017-01-01
 venue: 'IEEE International Conference on Bioinformatics and Biomedicine (BIBM)'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/8217643'

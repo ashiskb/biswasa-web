@@ -2,7 +2,7 @@
 title: "Robust Inductive Matrix Completion strategy to explore associations between lincRNAs and human disease phenotypes"
 collection: publications
 pub_type: conference
-permalink: /publication/2016-BIBM-biswas
+permalink: /publication/2016-BIBM-biswas/
 date: 2016-01-01
 venue: 'IEEE International Conference on Bioinformatics and Biomedicine (BIBM)'
 paperurl: 'https://www.computer.org/csdl/proceedings-article/bibm/2016/07822542/12OmNvlxJtG'

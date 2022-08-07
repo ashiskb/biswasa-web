@@ -2,7 +2,7 @@
 title: "Inferring disease associations of the long non-coding RNAs through non-negative matrix factorization"
 collection: publications
 pub_type: journal
-permalink: /publication/2015-NetMAHIB-biswas
+permalink: /publication/2015-NetMAHIB-biswas/
 date: 2015-01-01
 venue: 'Network Modeling Analysis in Health Informatics and Bioinformatics'
 paperurl: 'https://link.springer.com/article/10.1007/s13721-015-0081-6'

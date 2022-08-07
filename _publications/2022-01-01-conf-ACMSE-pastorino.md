@@ -2,7 +2,7 @@
 title: "Determination of optimal set of spatio-temporal features for predicting burn probability in the state of California, USA"
 collection: publications
 pub_type: conference
-permalink: /publication/2022-ACMSE-pastorino
+permalink: /publication/2022-ACMSE-pastorino/
 date: 2022-01-01
 venue: 'ACM Southeast Conference'
 paperurl: 'https://dl.acm.org/doi/abs/10.1145/3476883.3520228'

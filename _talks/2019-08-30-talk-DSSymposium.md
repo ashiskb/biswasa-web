@@ -2,7 +2,7 @@
 title: " Characterizing brain tumor subtypes from MRI images -- a computational approach "
 collection: talks
 type: "Talk"
-permalink: /talks/2019-08-30-talk-DSSymposium
+permalink: /talks/2019-08-30-talk-DSSymposium/
 venue: "CU Denver, Data Science Symposium"
 date: 2019-08-30
 location: "Denver, Colorado, USA."

@@ -2,7 +2,7 @@
 title: "Robust inductive matrix completion strategy to explore associations between lincrnas and human disease phenotypes"
 collection: publications
 pub_type: journal
-permalink: /publication/2018-TCBB-biswas
+permalink: /publication/2018-TCBB-biswas/
 date: 2018-01-01
 venue: 'IEEE/ACM Transactions on Computational Biology and Bioinformatics ( Volume: 16, Issue: 6, 01 Nov.-Dec. 2019)'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/8374810'

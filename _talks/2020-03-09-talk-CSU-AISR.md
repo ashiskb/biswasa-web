@@ -2,7 +2,7 @@
 title: "Artificial Intelligence and its key contributions in the medical imaging field"
 collection: talks
 type: "Talk"
-permalink: /talks/2020-03-09-talk-CSU-AISR
+permalink: /talks/2020-03-09-talk-CSU-AISR/
 venue: "Colorado State University (CSU) Animal Imaging Workshop"
 date: 2020-03-09
 location: "Fort Collins, Colorado, USA."

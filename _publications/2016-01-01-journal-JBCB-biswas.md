@@ -2,7 +2,7 @@
 title: "PR2S2Clust: patched rna-seq read segments’ structure-oriented clustering"
 collection: publications
 pub_type: journal
-permalink: /publication/2016-JBCB-biswas
+permalink: /publication/2016-JBCB-biswas/
 date: 2016-01-01
 venue: 'JBCB'
 paperurl: 'https://www.worldscientific.com/doi/abs/10.1142/S021972001650027X'

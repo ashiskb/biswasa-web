@@ -2,7 +2,7 @@
 title: "QLZCClust: Quaternary lempel-Ziv complexity based clustering of the RNA-seq read block segments"
 collection: publications
 pub_type: conference
-permalink: /publication/2013-BIBE-biswas
+permalink: /publication/2013-BIBE-biswas/
 date: 2013-01-01
 venue: 'The 13th IEEE International Conference on BioInformatics and BioEngineering'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/6701596'

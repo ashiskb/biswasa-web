@@ -2,7 +2,7 @@
 title: "Integrative approach for inference of gene regulatory networks using lasso-based random featuring and application to psychiatric disorders"
 collection: publications
 pub_type: journal
-permalink: /publication/2016-BMCMedGenomics-kim
+permalink: /publication/2016-BMCMedGenomics-kim/
 date: 2016-01-01
 venue: 'BMC Medical Genomics'
 paperurl: 'https://bmcmedgenomics.biomedcentral.com/articles/10.1186/s12920-016-0202-9'

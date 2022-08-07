@@ -1,7 +1,7 @@
 ---
 title: "Formulation, Development and Evaluation of Defensive Cyberdeception against Inﬂuence Campaigns in Online Social Networks"
 collection: funding
-permalink: /funding/2019-CRC-jafarian
+permalink: /funding/2019-CRC-jafarian/
 date: 2019-08-30
 venue: 'CU Denver'
 link: 'https://crcdenver.wordpress.com/2020/02/27/crc-fellows-talks-spg-2020-03-04-20-04-22-20-1130am-100pm/'

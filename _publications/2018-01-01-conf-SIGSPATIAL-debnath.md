@@ -2,7 +2,7 @@
 title: "Preference aware travel route recommendation with temporal influence"
 collection: publications
 pub_type: conference
-permalink: /publication/2018-SIGSPATIAL-debnath
+permalink: /publication/2018-SIGSPATIAL-debnath/
 date: 2018-01-01
 venue: '2nd ACM SIGSPATIAL Workshop on Recommendations for Location-based Services and Social Networks'
 paperurl: 'https://dl.acm.org/doi/abs/10.1145/3282825.3282829'

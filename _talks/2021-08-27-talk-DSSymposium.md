@@ -2,7 +2,7 @@
 title: "Data Science Competitions: A know-how to participate"
 collection: talks
 type: "Talk"
-permalink: /talks/2021-08-27-talk-DSSymposium
+permalink: /talks/2021-08-27-talk-DSSymposium/
 venue: "CU Denver, Data Science Symposium"
 date: 2021-08-27
 location: "Denver, Colorado, USA."

@@ -2,7 +2,7 @@
 title: "CSCI-3412: Algorithm"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2022-spring-Algo-3412
+permalink: /teaching/2022-spring-Algo-3412/
 venue: "KING-312"
 date: 2022-01-17
 location: "Denver, CO, USA."
