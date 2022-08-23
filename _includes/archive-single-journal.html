@@ -1,5 +1,4 @@
 {% include base_path %}
-
 {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
 {% else %}
@@ -65,7 +64,7 @@
           <a href="{{ post.github }}" target="_blank"><i class="fab fa-fw fa-github zoom" aria-hidden="true"></i></a>
         {% endif %}
         {% if post.bib_file %}
-          <a href="{{ post.bib_file }}" target="_blank"><i class="fa fa-download zoom" aria-hidden="true"></i></a>
+          <a href="{{ base_path }}{{ post.bib_file }}" target="_blank"><i class="fa fa-download zoom" aria-hidden="true"></i></a>
         {% endif %}
       {% else %}
       {% endif %}
