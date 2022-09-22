@@ -8,6 +8,11 @@ tags:
 ---
 
 # Autograding with nbgrader
+`nbgrader` is a tool that facilitates creating and `automatic` grading assignments in the Jupyter notebook. It allows instructors to easily create notebook-based assignments that include both coding exercises and written free-responses. `nbgrader` then also provides a streamlined interface for quickly grading completed assignments.
+
+For an overview and demonstration of nbgrader’s core functionality, check out the talk on nbgrader given at SciPy 2017:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5WUm0QuJdFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Setting up nbgrader (for instructors)
 1. Be sure to create a python virtual environment first.
 2. Install with pip: `pip install nbgrader`
@@ -26,9 +31,9 @@ jupyter server extension enable --user --py nbgrader
 ```
 5. Also, run the following commands:
 ```bash
-    upyter nbextension install --sys-prefix --py nbgrader --overwrite
-    jupyter nbextension enable --sys-prefix --py nbgrader
-    jupyter serverextension enable --sys-prefix --py nbgrader
+jupyter nbextension install --sys-prefix --py nbgrader --overwrite
+jupyter nbextension enable --sys-prefix --py nbgrader
+jupyter serverextension enable --sys-prefix --py nbgrader
 ```
 6. To check the installed extensions, run: 
 ```bash
@@ -37,7 +42,7 @@ jupyter server extension list
 jupyter nbextension list
 ```
   You'll find the listed extensions :
-  ```
+  ```bash
   JupyterLab v3.4.7
 /Users/ashis/venv-directory/venv-nbgrader/share/jupyter/labextensions
         jupyterlab_pygments v0.2.2 enabled OK (python, jupyterlab_pygments)
@@ -105,11 +110,12 @@ Config dir: /usr/local/etc/jupyter
       course_list/main  enabled 
       - Validating: OK
   ```
-7. To get up and running with nbgrader quickly, you can create an example directory with example course files in it by running the `nbgrader quickstart` command:
+7. To setup and run nbgrader quickly, you can create an example directory with example course files in it by running the `nbgrader quickstart` command:
 ```bash
 nbgrader quickstart csci4930nbg
 ```
-The above command will create a directory `csci4930nbg` with following directory tree, and a `gradebook.db` file. Please move the `gradebook.db` file in the `csci4930nbg/` directory:
+The above command will create a directory `csci4930nbg` with following directory tree, and a `gradebook.db` file. **Please move the `gradebook.db` file in the `csci4930nbg/` directory**:
+  - Before moving the `gradebook.db`, execute command: `tree csci4930nbg`:
 ```bash
 csci4930nbg
 ├── nbgrader_config.py
@@ -121,6 +127,20 @@ csci4930nbg
         └── problem2.ipynb
 
 2 directories, 5 files
+```
+- After moving the `gradebook.db`, execute command: `tree csci4930nbg`:
+```bash
+csci4930nbg
+├── nbgrader_config.py
+├── gradebook.db
+└── source
+    ├── header.ipynb
+    └── ps1
+        ├── jupyter.png
+        ├── problem1.ipynb
+        └── problem2.ipynb
+
+2 directories, 6 files
 ```
 The `gradebook.db` is SQLite based database which you can open/manage with app like `DB Browser for SQLite` and you will find there are 14 tables created:
 ```bash
