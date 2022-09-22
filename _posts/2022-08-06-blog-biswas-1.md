@@ -1,7 +1,7 @@
 ---
 title: 'Stories of common words (part 1)'
 date: 2022-08-06
-permalink: /posts/2022/06/biswas/blog-1/
+permalink: /posts/2022/06/biswas/blog-1-word-stories/
 tags:
   - story
   - common-words
