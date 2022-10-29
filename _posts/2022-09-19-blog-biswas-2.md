@@ -35,79 +35,10 @@ jupyter nbextension enable --sys-prefix --py nbgrader
 jupyter serverextension enable --sys-prefix --py nbgrader
 ```
 6. To check the installed extensions, run: 
-```bash
-jupyter labextension list
-jupyter server extension list
-jupyter nbextension list
-```
-  You'll find the listed extensions :
   ```bash
-  JupyterLab v3.4.7
-/Users/ashis/venv-directory/venv-nbgrader/share/jupyter/labextensions
-        jupyterlab_pygments v0.2.2 enabled OK (python, jupyterlab_pygments)
-        nbgrader v0.8.0 enabled OK (python, nbgrader)
-        @jupyter-widgets/jupyterlab-manager v5.0.3 enabled OK (python, jupyterlab_widgets)
-
-  Config dir: /Users/ashis/.jupyter
-    nbgrader enabled
-    - Validating nbgrader...
-      nbgrader 0.8.0 OK
-
-Config dir: /Users/ashis/venv-directory/venv-nbgrader/etc/jupyter
-    jupyterlab enabled
-    - Validating jupyterlab...
-      jupyterlab 3.4.7 OK
-    nbclassic enabled
-    - Validating nbclassic...
-      nbclassic  OK
-    nbgrader.server_extensions.formgrader enabled
-    - Validating nbgrader.server_extensions.formgrader...
-      nbgrader.server_extensions.formgrader  OK
-    nbgrader.server_extensions.validate_assignment enabled
-    - Validating nbgrader.server_extensions.validate_assignment...
-      nbgrader.server_extensions.validate_assignment  OK
-    nbgrader.server_extensions.assignment_list enabled
-    - Validating nbgrader.server_extensions.assignment_list...
-      nbgrader.server_extensions.assignment_list  OK
-    nbgrader.server_extensions.course_list enabled
-    - Validating nbgrader.server_extensions.course_list...
-      nbgrader.server_extensions.course_list  OK
-    notebook_shim enabled
-    - Validating notebook_shim...
-      notebook_shim  OK
-
-Config dir: /usr/local/etc/jupyter
-    nbgrader enabled
-    - Validating nbgrader...
-      nbgrader 0.8.0 OK
-
-  
-  Known nbextensions:
-  config dir: /Users/ashis/.jupyter/nbconfig
-    notebook section
-      jupyter-js-widgets/extension  enabled 
-      - Validating: OK
-  config dir: /Users/ashis/venv-directory/venv-nbgrader/etc/jupyter/nbconfig
-    notebook section
-      nbextensions_configurator/config_menu/main  enabled 
-      - Validating: problems found:
-        - require?  X nbextensions_configurator/config_menu/main
-      jupyter-js-widgets/extension  enabled 
-      - Validating: OK
-      create_assignment/main  enabled 
-      - Validating: OK
-      validate_assignment/main  enabled 
-      - Validating: OK
-    tree section
-      nbextensions_configurator/tree_tab/main  enabled 
-      - Validating: problems found:
-        - require?  X nbextensions_configurator/tree_tab/main
-      formgrader/main  enabled 
-      - Validating: OK
-      assignment_list/main  enabled 
-      - Validating: OK
-      course_list/main  enabled 
-      - Validating: OK
+  jupyter labextension list
+  jupyter server extension list
+  jupyter nbextension list
   ```
 
 7. To setup and run nbgrader quickly, you can create an example directory with example course files in it by running the `nbgrader quickstart` command:
@@ -115,53 +46,57 @@ Config dir: /usr/local/etc/jupyter
 nbgrader quickstart csci4930nbg
 ```
 The above command will create a directory `csci4930nbg` with following directory tree, and a `gradebook.db` file. **Please move the `gradebook.db` file in the `csci4930nbg/` directory**:
-  - Before moving the `gradebook.db`, execute command: `tree csci4930nbg`:
-```bash
-csci4930nbg
-├── nbgrader_config.py
-└── source
-    ├── header.ipynb
-    └── ps1
-        ├── jupyter.png
-        ├── problem1.ipynb
-        └── problem2.ipynb
+   - Before moving the `gradebook.db`, execute command: `tree csci4930nbg`:
 
-2 directories, 5 files
-```
-- After moving the `gradebook.db`, execute command: `tree csci4930nbg`:
-```bash
-csci4930nbg
-├── nbgrader_config.py
-├── gradebook.db
-└── source
-    ├── header.ipynb
-    └── ps1
-        ├── jupyter.png
-        ├── problem1.ipynb
-        └── problem2.ipynb
+    ```bash
+    csci4930nbg
+    ├── nbgrader_config.py
+    └── source
+        ├── header.ipynb
+        └── ps1
+            ├── jupyter.png
+            ├── problem1.ipynb
+            └── problem2.ipynb
 
-2 directories, 6 files
-```
-The `gradebook.db` is SQLite based database which you can open/manage with app like `DB Browser for SQLite` and you will find there are 14 tables created:
-```bash
-alembic_version
-assignment
-base_cell
-comment
-course
-grade
-grade_cells
-notebook
-solution-cells
-source_cell
-student
-submitted_assignment
-submitted_notebook
-task_cells
-```
-You may find some dummy student entries in the `student` table.
+    2 directories, 5 files
+    ```
+   - After moving the `gradebook.db`, execute command: `tree csci4930nbg`:
 
-8. **Adding students ids in database**. Let's write a text file `students.txt' containing a list of student ids:
+   ```bash
+   csci4930nbg
+   ├── nbgrader_config.py
+   ├── gradebook.db
+   └── source
+       ├── header.ipynb
+       └── ps1
+           ├── jupyter.png
+           ├── problem1.ipynb
+           └── problem2.ipynb
+
+   2 directories, 6 files
+   ```
+  The `gradebook.db` is SQLite based database which you can open/manage with app like `DB Browser for SQLite` and you will find there are 14 tables created:
+  ```bash
+  alembic_version
+  assignment
+  base_cell
+  comment
+  course
+  grade
+  grade_cells
+  notebook
+  solution-cells
+  source_cell
+  student
+  submitted_assignment
+  submitted_notebook
+  task_cells
+  ```
+  You may find some dummy student entries in the `student` table.
+
+### Adding students ids in database
+Let's write a text file `students.txt' containing a list of student ids:
+
 ```
 ashiskb,Ashis Kumer,Biswas,ashiskb@yahoo.com
 tri,Tri, Nguyen,tri@yahoo.com
@@ -182,7 +117,9 @@ with Gradebook('sqlite:///gradebook.db') as gb:
             gb.add_student(id)
 ```
 You can check the ids should be there in the database.student. Now from your notebook, click `Formgrader`, then click `Manage Students`. You can add first_name, last_name, etc from the `formgrader` with ease.
-9. **Creating assignment**: In the `formgrader` in your jupyter notebook at your course directory, click `+ Add new assignment`. Then, name your assignment. Create a new notebook in it. Then, once the notebook is open, at the top in the toolbar click `View`-> `Cell Toolbar` -> `Create Assignment`.
+
+### Creating assignment
+In the `formgrader` in your jupyter notebook at your course directory, click `+ Add new assignment`. Then, name your assignment. Create a new notebook in it. Then, once the notebook is open, at the top in the toolbar click `View`-> `Cell Toolbar` -> `Create Assignment`.
   * By default each cell will have a dropdown menu with the “-” item selected. 
   * For markdown cells, there are three additional options to choose from, either “Manually graded answer”, “Manually graded task” or “Read-only”
   * For code cells, there are five options to choose from, including “Manually graded answer”, “Manually graded task”, “Autograded answer”, “Autograder tests”, and “Read-only”.
@@ -229,30 +166,35 @@ You can check the ids should be there in the database.student. Now from your not
           c.ClearHiddenTests.end_test_delimeter = "VERBORGE TOESTE EINDIG"
         ``` 
     * **Read-only cells**: the nbgrader extension will mark that cell as one that cannot be modified. This is indicated by a lock icon on the left side of the cell toolbar. The read-only functionality will reverse any such changes made by the student.
-10. **Validating assignments**: Ideally, the solutions in the instructor version should be correct and pass all the test cases to ensure that you are giving your students tests that they can actually pass. To verify this is the case, you can use the validate extension. 
-  * If your assignment passes all the tests, you’ll get a success pop-up.
-  * If it doesn’t pass all the tests, you’ll get a message telling you which cells failed.
-  * You can validate an assignment from the commandline too:
-  ```bash
-  nbgrader validate source/ps1/*.ipynb
-  ```
-11. **Generate and release an assignment**: After an assignment has been created with the assignment toolbar, you will want to generate the version that students will receive. You can do this from the formgrader by clicking the “generate” button. 
+
+### Validating assignments
+Ideally, the solutions in the instructor version should be correct and pass all the test cases to ensure that you are giving your students tests that they can actually pass. To verify this is the case, you can use the validate extension. 
+* If your assignment passes all the tests, you’ll get a success pop-up.
+* If it doesn’t pass all the tests, you’ll get a message telling you which cells failed.
+* You can validate an assignment from the commandline too:
+```bash
+nbgrader validate source/ps1/*.ipynb
+```
+
+### Generate and release an assignment
+After an assignment has been created with the assignment toolbar, you will want to generate the version that students will receive. You can do this from the formgrader by clicking the "generate" button. 
   * This should succeed with a pop-up window containing log output.
   * You can generate an assignment from the command line too:
-
-  ```bash
-  nbgrader generate_assignment "ps1" --IncludeHeaderFooter.header=source/header.ipynb --force
-  ```
-   - Before you run the command above make sure to organize your assignment files in the source directory likes this:
-   ```bash
+    ```bash
+    nbgrader generate_assignment "ps1" --IncludeHeaderFooter.header=source/header.ipynb --force
+    ```
+     - Before you run the command above make sure to organize your assignment files in the source directory likes this:
+    ```bash
     {course_directory}/source/{assignment_id}/{notebook_id}.ipynb
-  ```
-  - After running nbgrader generate_assignment, the release version of the notebooks will be:
-  ```bash
-{course_directory}/release/{assignment_id}/{notebook_id}.ipynb
-  ```
-  - As a reminder, the instructor is responsible for distributing this release version to their students using their institution’s existing student communication and document distribution infrastructure.
-12. **Preview the student version**: After generating the student version of assignment, you should preview it to make sure that it looks correct. You can do this from the formgrader extension by clicking the “preview” button:
+    ```
+    - After running nbgrader generate_assignment, the release version of the notebooks will be:
+    ```bash
+  {course_directory}/release/{assignment_id}/{notebook_id}.ipynb
+    ```
+    - As a reminder, the instructor is responsible for distributing this release version to their students using their institution's existing student communication and document distribution infrastructure.
+
+### Preview the student version 
+After generating the student version of assignment, you should preview it to make sure that it looks correct. You can do this from the formgrader extension by clicking the "preview" button:
   * Under the hood, there will be a new folder called release with the same structure as source. The release folder contains the actual release version of the assignment files:
     ```bash
     release/ps1/problem1.ipynb
@@ -262,21 +204,26 @@ You can check the ids should be there in the database.student. Now from your not
     ```bash
     nbgrader validate --invert release/ps1/*.ipynb
     ```
-    -  Ideally, all the tests should fail in the student version if the student hasn’t implemented anything. 
-    - If the notebook fails all the test cases, you should see the message “Success! The notebook does not pass any tests.”
-13. **Releasing files to students and collecting submissions**: At this point you will be able to take the files in the release folder and distribute them to students.
+    -  Ideally, all the tests should fail in the student version if the student hasn't implemented anything. 
+    - If the notebook fails all the test cases, you should see the message "Success! The notebook does not pass any tests."
+
+### Releasing files to students and collecting submissions
+
+At this point you will be able to take the files in the release folder and distribute them to students.
   - Similarly, to collect submissions, you can do this either with the formgrader extension or with the nbgrader collect command. Otherwise, you will need to manually place submitted files into the `submitted/` directory. You need to organize your files in a particular way. 
   - For submitted assignments, you should have the submitted versions of students’ assignments organized as follows:
-  ```bash
-submitted/{student_id}/{assignment_id}/{notebook_id}.ipynb
-  ```
+```bash
+  submitted/{student_id}/{assignment_id}/{notebook_id}.ipynb
+```
   - Please note: Students must use version 3 or greater of the IPython/Jupyter notebook for nbgrader to work properly. If they are not using version 3 or greater, it is possible for them to delete cells that contain important metadata for nbgrader. With version 3 or greater, there is a feature in the notebook that prevents cells from being deleted.
     - To ensure that students have a recent enough version of the notebook, you can include a cell such as the following in each notebook of the assignment:
     ```python
     import IPython
     assert IPython.version_info[0] >= 3, "Your version of IPython is too old, please update it."
     ```
-14. **Autograding assignments**: There are two ways to autograde submissions:
+
+### Autograding assignments
+There are two ways to autograde submissions:
   * From the `formgrader` extension: You can autograde individual submissions from the formgrader directly. To do so, click on the the number of submissions in the “Manage Assignments” view.
     * This will take you to a new page where you can see all the submissions.
     * For a particular submission, click the “autograde” button to autograde it.
@@ -293,9 +240,13 @@ submitted/{student_id}/{assignment_id}/{notebook_id}.ipynb
   ```bash
     autograded/{student_id}/{assignment_id}/{notebook_id}.ipynb
   ```
-15. **Manual grading**: After assignments have been autograded, they will saved into an `autograded/` directory. 
+
+### Manual grading
+After assignments have been autograded, they will saved into an `autograded/` directory. 
   - We can manually grade assignments through the formgrader as well, by clicking on the “Manual Grading” navigation button. This will provide you with an interface for hand grading assignments that it finds in the directory listed above. Note that this applies to all assignments as well – as long as the autograder has been run on the assignment, it will be available for manual grading via the formgrader.
-16. **Generate feedback on assignments**: after assignments have been autograded and/or manually graded, they will located in the autograded directory:
+
+### Generate feedback on assignments
+After assignments have been autograded and/or manually graded, they will located in the autograded directory:
   ```bash
   autograded/{student_id}/{assignment_id}/{notebook_id}.ipynb
   ```
@@ -312,7 +263,9 @@ submitted/{student_id}/{assignment_id}/{notebook_id}.ipynb
   * The `nbgrader generate_feedback` is also available by clicking the `Generate Feedback` button on either the `Manage Assignments` view (to generate feedback for all graded submissions), or on the individual student’s `Manage Submission` page (to generate feedback for that specific individual).
   * We can release the generated feedback by running the nbgrader `release_feedback command`, which will send the generated HTML files to the nbgrader exchange.
     - The `nbgrader release_feedback` is available by clicking the Release Feedback button on either the Manage Assignments view (to release feedback for all generated feedback), or on the individual student’s Manage Submission page (to release feedback for that specific individual).
-17. **Getting grades from the database**: In addition to creating feedback for the students, you may need to upload grades to whatever learning management system your school uses (e.g. Canvas, Blackboard, etc.). nbgrader provides a way to export grades to CSV out of the box, with the `nbgrader export` command:
+  
+### Getting grades from the database
+In addition to creating feedback for the students, you may need to upload grades to whatever learning management system your school uses (e.g. Canvas, Blackboard, etc.). nbgrader provides a way to export grades to CSV out of the box, with the `nbgrader export` command:
   ```bash
   nbgrader export
   ```
@@ -323,7 +276,7 @@ submitted/{student_id}/{assignment_id}/{notebook_id}.ipynb
   ps1,,[timestamp],hacker,,,,3.0,0.0,3.0,13.0
   ```
   * If you need to customize how the grades are exported, you can write your own exporter.
-    
-##References
+
+## References
 * [Official nbgrader website](https://nbgrader.readthedocs.io/en/stable/index.html)
   - [Creating and grading assignments](https://nbgrader.readthedocs.io/en/stable/user_guide/creating_and_grading_assignments.html#manually-graded-answer-cells)
