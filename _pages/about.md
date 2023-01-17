@@ -15,20 +15,24 @@ I earned my Ph.D in Computer Science and Engineering from the [University of Tex
 
 ### Students
 * **PhD Students**
-  - Javier Pastorino
   - Malgorzata Schwab
   - Majed Balkheer
 * **MS Students**
   - Matthew Michaelis
+* **Graduated PhD Students**
+  - Dr. Javier Pastorino [Assistant Prof, CSE@CU Denver (as of 2023-01-17)]
 * **Graduated MS Students**
   * Mohammed Mahdi
     - MS thesis: Protein Phosphorylation Site Prediction using Deep Learning approach (Fall 2018)
     - First employment after graduation: Research scientist at the Ministry of Education, Iraq.
   * Nathan Justice
     - MS thesis: Identification of Metastatic tissue in Histopathologic scans of lymph node sections. (Spring 2020)
-    - First employment after graduation: Amazon
+    - First employment after graduation: Amazon (training specialist)
   * Zhelin Yu
     - First employment after graduation: Oracle
   * Jian Peng
     - MS thesis: 3D CNN data integration platform for ADHD detection (Fall 2019)
-    - First employment after graduation: his own startup called `InHouse`.
+    - First employment after graduation: founding partner of the startup called `InHouse`.
+  * James Theiring
+    - MS thesis: Bias Mitigation in Visual Models through Split-model regularization: A case study in online class participants' Engagement classification. (Fall 2022)
+    - First employment after graduation: IPS Strategic Capital as Data Science Specialist.
