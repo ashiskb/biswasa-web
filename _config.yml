@@ -13,6 +13,7 @@ name                     : &name "Ashis Kumer Biswas"
 description              : &description "Academic website of Ashis Kumer Biswas"
 url                      : https://cse.ucdenver.edu/~biswasa # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
+safe                     : true #safe mode
 repository               : "ashiskb/ashiskb.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
@@ -265,6 +266,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-last-modified-at
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -272,6 +274,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-last-modified-at
 
 
 # Archives

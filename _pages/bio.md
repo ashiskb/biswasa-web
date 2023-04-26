@@ -15,7 +15,8 @@ Dr. Biswas's research interests span several areas related to machine learning, 
 * **B.S.**, Computer Science and Engineering, University of Dhaka, Bangladesh, April 2008
 
 ## Work Experience
-* **Assistant Professor**, Department of Computer Science and Engineering, University of Colorado Denver, Sept. 2017 - present
+* **Assistant Professor**, Department of Computer Science and Engineering, University of Colorado Denver, Sept. 2017 - present.
+* **Machine Learning Advisory Member**, [LivedX](https://livedx.com/team/), Oct. 2019 - present.
 * **Visiting Educator**, Microsoft Summer Data Science Educator Program, July 11, 2022-Aug 5, 2022.
 * **Adjunct faculty**, Department of Computer Science and Engineering, University of Texas at Arlington, Jan. 2017 - Aug 2017.
 * **Lecturer**, Department of Computer Science and Engineering, University of Dhaka, Bangladesh, Jan. 2010 - Aug. 2011.

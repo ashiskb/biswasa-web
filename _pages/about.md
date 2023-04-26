@@ -15,24 +15,30 @@ I earned my Ph.D in Computer Science and Engineering from the [University of Tex
 
 ### Students
 * **PhD Students**
-  - Malgorzata Schwab
-  - Majed Balkheer
+  - [Malgorzata Schwab](https://ml.cse.ucdenver.edu/people/malgorzata_schwab/index.html)
+  - [Majed Balkheer](https://ml.cse.ucdenver.edu/people/majed_balkheer/index.html)
 * **MS Students**
-  - Matthew Michaelis
+  - Srivani Inturi
 * **Graduated PhD Students**
-  - Dr. Javier Pastorino [Assistant Prof, CSE@CU Denver (as of 2023-01-17)]
+  - [Dr. Javier Pastorino](https://ml.cse.ucdenver.edu/people/javier_pastorino/index.html)
+    * Dissertation title: Training Machine Learning Models in Various Oblivious Settings
+      - Cite as: "Gonzalez, J. A. P. (2022). Training Machine Learning Models in Various Oblivious Settings (Doctoral dissertation, University of Colorado at Denver)." [ [ProQuest](https://www.proquest.com/openview/2c7a80cb9575a394e55e428225b365c8) ]
+    * First job: Assistant Prof, CSE@CU Denver
 * **Graduated MS Students**
-  * Mohammed Mahdi
-    - MS thesis: Protein Phosphorylation Site Prediction using Deep Learning approach (Fall 2018)
-    - First employment after graduation: Research scientist at the Ministry of Education, Iraq.
-  * Nathan Justice
-    - MS thesis: Identification of Metastatic tissue in Histopathologic scans of lymph node sections. (Spring 2020)
-    - First employment after graduation: Amazon (training specialist)
-  * Zhelin Yu
-    - First employment after graduation: Oracle
-  * Jian Peng
-    - MS thesis: 3D CNN data integration platform for ADHD detection (Fall 2019)
-    - First employment after graduation: founding partner of the startup called `InHouse`.
   * James Theiring
     - MS thesis: Bias Mitigation in Visual Models through Split-model regularization: A case study in online class participants' Engagement classification. (Fall 2022)
-    - First employment after graduation: IPS Strategic Capital as Data Science Specialist.
+    - First job: IPS Strategic Capital as Data Science Specialist.
+  * Rory Flynn
+    - MS thesis: Predicting Autism Spectrum Disorder from Genome-wide Association data with Genetic Balancing Generative Adversarial Network (Fall 2020)
+  * [Zhelin Yu](https://ml.cse.ucdenver.edu/people/zhelin_yu/index.html)
+    - MS research + courses: Tumor Segmentation (Fall 2020)
+    - First employment after graduation: Oracle
+  * [Nathan Justice](https://ml.cse.ucdenver.edu/people/nathan_justice/index.html)
+    - MS thesis: Identification of Metastatic tissue in Histopathologic scans of lymph node sections. (Spring 2020)
+    - First job: Amazon (training specialist)
+  * [Jian Peng](https://ml.cse.ucdenver.edu/people/jian_peng/index.html)
+    - MS thesis: 3D CNN data integration platform for ADHD detection (Fall 2019)
+    - First job: founding partner of the startup called `InHouse`.
+  * [Mohammed Mahdi](https://ml.cse.ucdenver.edu/people/mohammed_mahdi/index.html)
+    - MS thesis: Protein Phosphorylation Site Prediction using Deep Learning approach (Fall 2018)
+    - First job: Research scientist at the Ministry of Education, Iraq.
