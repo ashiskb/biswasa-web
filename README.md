@@ -245,6 +245,8 @@ Thanks to Prof. Konrad Kording for the [Jekyll site template](http://kordinglab.
     * Step 4: now, add one `*.md` file for each type of the new `collection` that you desire.
 * **Q** My `git-remote-https` process freezes in MacOSX during syncing. What should I do?
   * **A** Try `git config http.postBuffer 16384`. Then, manually push to remote.
+* **Q** Runny `jekyll build` produces an error `/usr/local/lib/ruby/site_ruby/3.2.0/bundler/runtime.rb:304:in check_for_activated_spec!: You have already activated public_suffix 5.0.1, but your Gemfile requires public_suffix 4.0.7. Prepending bundle exec to your command may solve this. (Gem::LoadError)`. What should I do?
+  * **A** Do as it says. Instead of `jekyll build` run `bundle exec jekyll build`
 * **Q** I am having the following error: `You have already activated i18n 1.12.0, but your Gemfile requires i18n 0.9.5. Prepending bundle exec to your command may solve this. (Gem::LoadError)`, when I do `jekyll build`. What shall I do?
   * **A**: Here are the steps. Please note, the following action may impose side-effects to other projects using gems of different versions. You may need to repeat the same steps in those projects. I hope there is a better way to tackle this. But, for the sake of this particular commit, let's call it a day!
   * Step 1: Clean previously installed gems with `bundle clean --force`
