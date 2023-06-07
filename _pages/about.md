@@ -14,10 +14,12 @@ Welcome! I am a data scientist and researcher involved into the design, developm
 I earned my Ph.D in Computer Science and Engineering from the [University of Texas at Arlington](https://www.uta.edu) in 2016, my M.S. and B.S. both in Computer Science and Engineering from [University of Dhaka](https://www.du.ac.bd) in 2009 and 2008 respectively. My schoarly works have been published in MLWA, IEEE/ACM TCBB, BMC Medical Genomics, NetMAHIB, JBCB, BMC Bioinformatics other outlets. Although many of the published works cover problem in genomic, transcriptomic and proteomic domains, later I expanded my research problem area into several other fields including education, human development, cybersecurity, NLP and NLU, medical imaging with the help of a few amazing collaborators and colleagues at CU Denver. 
 
 ### Students
-* **PhD Students**
+<span style="color:red;font-weight:bold">Currently, I'm looking for a competitive graduate student to investigate Data-blind machine learning paradigm. If you are interested, send me an email at ashis.biswas@ucdenver.edu</span>
+
+* **Current PhD Students**
   - [Malgorzata Schwab](https://ml.cse.ucdenver.edu/people/malgorzata_schwab/index.html)
   - [Majed Balkheer](https://ml.cse.ucdenver.edu/people/majed_balkheer/index.html)
-* **MS Students**
+* **Current MS Students**
   - Srivani Inturi
 * **Graduated PhD Students**
   - [Dr. Javier Pastorino](https://ml.cse.ucdenver.edu/people/javier_pastorino/index.html)
