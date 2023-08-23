@@ -244,11 +244,13 @@ Thanks to Prof. Konrad Kording for the [Jekyll site template](http://kordinglab.
     * Step 3: The detail schema that you are including in the `_pages/funding.md` file, needs to be created in the `_includes/archive-single-funding.html`. I borrowed a lot of the decorations from other schema files.
     * Step 4: now, add one `*.md` file for each type of the new `collection` that you desire.
 * **Q** My `git-remote-https` process freezes in MacOSX during syncing. What should I do?
-  * **A** Try `git config http.postBuffer 16384`. Then, manually push to remote.
-* **Q** Runny `jekyll build` produces an error `/usr/local/lib/ruby/site_ruby/3.2.0/bundler/runtime.rb:304:in check_for_activated_spec!: You have already activated public_suffix 5.0.1, but your Gemfile requires public_suffix 4.0.7. Prepending bundle exec to your command may solve this. (Gem::LoadError)`. What should I do?
+  * **A** Probably it's an issue of having a bigger default `postBuffer` size which is 1MiB (= 1048576 bytes) size. Try reducing the size by calling `git config http.postBuffer 16384`, which is only 16KB (for instance). Then, manually push to remote.
+* **Q** Running `jekyll build` produces an error `/usr/local/lib/ruby/site_ruby/3.2.0/bundler/runtime.rb:304:in check_for_activated_spec!: You have already activated public_suffix 5.0.1, but your Gemfile requires public_suffix 4.0.7. Prepending bundle exec to your command may solve this. (Gem::LoadError)`. What should I do?
   * **A** Do as it says. Instead of `jekyll build` run `bundle exec jekyll build`
 * **Q** I am having the following error: `You have already activated i18n 1.12.0, but your Gemfile requires i18n 0.9.5. Prepending bundle exec to your command may solve this. (Gem::LoadError)`, when I do `jekyll build`. What shall I do?
   * **A**: Here are the steps. Please note, the following action may impose side-effects to other projects using gems of different versions. You may need to repeat the same steps in those projects. I hope there is a better way to tackle this. But, for the sake of this particular commit, let's call it a day!
   * Step 1: Clean previously installed gems with `bundle clean --force`
   * Step 2: Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
   * Step 3: Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+* **Q** I am experiencing the following error when I do `jekyll build`, or `bundle exec jekyll build`: `/usr/local/lib/ruby/gems/3.2.0/bin/bundle:25:in 'load': cannot load such file -- /usr/local/lib/ruby/gems/3.2.0/gems/bundler-2.4.10/exe/bundle (LoadError)`
+  * **A** Reinstall jekyll with `gem install jekyll`
