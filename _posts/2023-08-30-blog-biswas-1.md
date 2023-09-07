@@ -37,7 +37,7 @@ Configuring Windows 10 operating system for experimenting Deep learning / Machin
 * You can list all virtual environments and their absolute paths by: `conda info --envs`
 
 ## Configuring VSCode to use the Conda virtual environments you create
-* If you would like the conda environments to be listed as interpreters, Go: `File` > `Settings`. Then, search for `venv`, and then to `Python: Venv Path` as `C:\Users\xyz\conda\envs`
+* If you would like the conda environments to be listed as interpreters, Go: `File` > `Settings`. Then, search for `venv`, and then to `Python: Venv Path` as `C:\Users\xyz\conda\envs`, where replace `xyz` with your username in the system, and `conda` may either remain as `conda` or `miniconda3` depending on your installation. Please double check the absolute paths by inspecting `conda info --envs`.
 * Reopen VSCode.
 
 ## Installing Tensorflow 2.0
@@ -49,17 +49,17 @@ Configuring Windows 10 operating system for experimenting Deep learning / Machin
   * CUDA toolkit 11.8 ** (please be precise) — check for archived releases.
   * cuDNN SDK 8.6.0 ** (please be precise) — check for archived releases.
 * `Tensorflow 2.10`` was the last Tensorflow release supporting GPU on `native windows``. Starting from `Tensorflow 2.11``, you will need to install Tensorflow in Windows Subsystem for Linux (WSL2), or try Tensorflow-DirectML-Plugin. Below are the steps to install `Tensorflow 2.10`:
-  * Create a conda environment: $`conda create --name venv-tf2 python=3.9`
-  * Activate the environment: $`conda activate venv-tf2`
-  * Deactivate the environment: $`conda deactivate`
+  * Create a conda environment: `conda create --name venv-tf2 python=3.9`
+  * Activate the environment: `conda activate venv-tf2`
+  * Deactivate the environment: `conda deactivate`
   * Activate it again. Haha! Just checking whether you are following the steps.
   * **GPU setup**:
       * Install NVIDIA GPU driver (in my case it was `NVIDIA GeFroce GTX 1080` (Notebook) from their [official website](https://www.nvidia.com/Download/index.aspx?lang=en-us).
       * Then with `conda` install `CUDA`, `cuDNN` using the following command:
-          * $`conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0`
-  * $`pip install --upgrade pip`
+          * `conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0`
+  * `pip install --upgrade pip`
   * Since, `windows 10 native` will not support beyond Tensorflow 2.10 version. Install it with:
-      * $`pip install "tensorflow<2.11"`
+      * `pip install "tensorflow<2.11"`
   * Verify install:
       * Run the following code in activated python shell:
           * `import tensorflow as tf`
