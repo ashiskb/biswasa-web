@@ -135,7 +135,7 @@ Please make sure the `collection: talks` are set. Following the header section, 
   * Step 1: You need the complete sitemap of the old-site (e.g., located at `https://cse.ucdenver.edu/~biswasa/`) in XML format. Luckily, the project offers a sitemap at the bottom of the page. Click on the link and then click on the link that says `XML version` of the sitemap. Please take a note of the sitemap url and the xml file. Few lines are shown below:
 
 
-  ```xml
+  ```html
   <url>
 <loc>
 https://cse.ucdenver.edu/~biswasa/posts/2023/09/biswas/blog-datcon/
