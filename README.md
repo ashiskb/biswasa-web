@@ -127,8 +127,43 @@ Please make sure the `collection: talks` are set. Following the header section, 
 
 
 ## How to deploy in your own web-server
-* Update the `url` field of the `_config.dev.yml` to appropriate setting.
+* Update the `url` field of the `_config.yml` and (not in `_config.dev.yml`) to appropriate setting.
 * Do not build with `jekyll serve`. Only use `jekyll build`. And upload the content of the `_site/` directory.
+
+### Redirect your entire domain to a new domain
+* To encourage SEO optimization, this project discourages use of any use of `redirect` or `html <meta>` tags, instead work with the `.htaccess` at the old-site directory.
+  * Step 1: You need the complete sitemap of the old-site (e.g., located at `https://cse.ucdenver.edu/~biswasa/`) in XML format. Luckily, the project offers a sitemap at the bottom of the page. Click on the link and then click on the link that says `XML version` of the sitemap. Please take a note of the sitemap url and the xml file. Few lines are shown below:
+
+
+  ```xml
+  <url>
+<loc>
+https://cse.ucdenver.edu/~biswasa/posts/2023/09/biswas/blog-datcon/
+</loc>
+<lastmod>2023-10-21T00:21:11-06:00</lastmod>
+</url>
+<url>
+<loc>
+https://cse.ucdenver.edu/~biswasa/posts/2023/10/biswas/blog-motd/
+</loc>
+<lastmod>2023-10-21T00:21:11-06:00</lastmod>
+</url>
+<url>
+<loc>
+https://cse.ucdenver.edu/~biswasa/posts/2023/10/biswas/blog-markdown-to-pdf/
+</loc>
+<lastmod>2023-10-21T00:21:11-06:00</lastmod>
+</url>
+  ```
+
+  * Step 2: Write a `.htaccess` file containing a `Rewrite 301` command for each of the urls found in the above sitemap xml. For instance, for the 3 urls above the set of `Rewrite 301` commands would be considering the new domain is located at `http://ashiskb.info/`:
+
+```bash
+Redirect 301 /~biswasa/posts/2023/09/biswas/blog-datcon/ http://ashiskb.info/posts/2023/09/biswas/blog-datcon/
+Redirect 301 /~biswasa/posts/2023/10/biswas/blog-motd/ http://ashiskb.info/posts/2023/10/biswas/blog-motd/
+Redirect 301 /~biswasa/posts/2023/10/biswas/blog-markdown-to-pdf/ http://ashiskb.info/posts/2023/10/biswas/blog-markdown-to-pdf/
+```
+
 
 ## How to add posts
 
