@@ -11,7 +11,7 @@ title                    : "Dr. B"
 title_separator          : "-"
 name                     : &name "Ashis Kumer Biswas"
 description              : &description "Ashis Kumer Biswas -- Profile site"
-url                      : http://ashiskb.info # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://ashiskb.info # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 safe                     : true #safe mode
 repository               : "ashiskb/ashiskb.github.io"
@@ -104,7 +104,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "ashiskb"
-  orcid            : "http://orcid.org/0000-0002-7446-4639"
+  orcid            : "https://orcid.org/0000-0002-7446-4639"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
