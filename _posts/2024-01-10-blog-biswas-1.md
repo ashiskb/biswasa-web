@@ -23,7 +23,7 @@ If you would like to create a pdf/html from your jupyter notebook, you can use t
 
 
 ### Converting a notebook into HTML
-`jupyter nbconvert --to htmlm yourNotebook.ipynb`
+`jupyter nbconvert --to html yourNotebook.ipynb`
 * This exports a html version of the jupyter notebook.
 
 ### Converting a notebook into WebPDF

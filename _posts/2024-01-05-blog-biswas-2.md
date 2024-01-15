@@ -12,6 +12,21 @@ tags:
 
 Make sure to authenticate your github pass token at the command line. You may find my this blog post useful: [Github command line with new authentication](/posts/2024/01/biswas/blog-github-command-line-with-new-authentication/).
 
+## TL;DR
+
+| Command      | Purpose | 
+| :---        |    :---   | 
+| `git clone https://github.com/xxx/my-repo.git`     | clone repo       | 
+| `git status`   | track changes        |
+| `git add a_file.txt` | adds `a_file.txt` into `staging area` |
+| `git add --all` | adds everything in the dir into `staging area` |
+| `git commit -m "a message"` | commits everything at the current `staging area` |
+| `git push` | pushes latest commit into the remote repo |
+| `git checkout -- another_file.txt` | undoing file modifications before staging (with `git add`) is performed |
+| `git reset HEAD a_file.txt` | unstaging any staged changes on `a_file.txt` |
+| `git reset HEAD~` | undoing latest commit |
+
+
 ## Clone a repository
 * In your local computer, change current working directory to the directory where you want to clone a github repository. Say, `cd _myGITs/`
 * `git clone https://github.com/xxx/my-repo.git`
