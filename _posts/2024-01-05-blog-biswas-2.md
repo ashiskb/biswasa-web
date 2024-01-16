@@ -18,7 +18,10 @@ Make sure to authenticate your github pass token at the command line. You may fi
 | :---        |    :---   | 
 | `git clone https://github.com/xxx/my-repo.git`     | clone repo       | 
 | `git status`   | track changes        |
-| `git branch`   | name of the branch we are currently in |
+| `git diff`     | shows file differences not yet staged |
+| `git diff --staged` | shows file differences between staging and the last file version |
+| `git branch`   |  Lists all local branches in the current repository |
+| `git branch branchZ` | Creates a new branch named `branchZ` | 
 | `git log -3` | check the last 3 logs of git repository |
 | `git log --graph` | draw text-based graphical representation of commit history |
 | `git add a_file.txt` | adds `a_file.txt` into `staging area` |
@@ -29,7 +32,7 @@ Make sure to authenticate your github pass token at the command line. You may fi
 | `git push` | pushes latest commit into the remote repo |
 | `git push origin branchX` | pushes latest commit into the remote repo branch named `branchX` |
 | `git checkout -- another_file.txt` | undoing file modifications before staging (with `git add`) is performed |
-| `git reset HEAD a_file.txt` | unstaging any staged changes on `a_file.txt` |
+| `git reset HEAD a_file.txt` | unstaging any staged changes on `a_file.txt`, but preserving its contents. |
 | `git reset HEAD~` | undoing latest commit |
 | `git checkout -b branchY` | create a new branch, and automatically land on the new branch named `branchY` |
 | `git checkout branchX` | switch to branch `branchX` |
