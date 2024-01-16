@@ -27,6 +27,22 @@ Also, make sure to run `ruby -v` command to check if the version matches with yo
 gem install jekyll bundler
 ```
 
+### On Ubuntu
+* According to [Jekyll official documentation](https://jekyllrb.com/docs/installation/ubuntu/) you need `Ruby 2.5.0+`,
+`RubyGems`, `gcc` and `make`. You can install these pre-reqs with a command: `sudo apt-get install ruby-full
+build-essential zlib1g-dev`.
+* Avoid installing RubyGems packages (called gems) as the root user. Instead, set up a gem installation directory for
+your user account. The following commands will add environment variables to your `~/.bashrc` file to configure the gem installation path:
+
+```bash
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+* Finally install Jekyll and the bundler: `gem install jekyll bundler`
+
 When the jekyll is installed successfully, navigate to the project folder (assuming you have jekyll project created already) and run the following to build/serve:
 
 ### Build a Jekyll project
