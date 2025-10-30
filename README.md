@@ -3,6 +3,112 @@
 
 This is repository for [academic site](https://cse.ucdenver.edu/~biswasa/) of Dr. Ashis Kumer Biswas. I used [Jekyll](https://jekyllrb.com) and [academic website template](https://github.com/academicpages/academicpages.github.io) to design and build the pages. I welcome everyone to contribute to the site. Feel free to fork and pull-request!
 
+### On MacOS
+Jekyll/ruby relies on CONFIG["CC"] and CONFIG["CXX"] being set properly. If you notice the following:
+```zsh
+% ruby -rrbconfig -e 'puts RbConfig::CONFIG["CC"]'
+clang
+% ruby -rrbconfig -e 'puts RbConfig::CONFIG["CXX"]'
+false
+```
+
+It means, `CXX` is not configured. Therefore, `gem install jekyll` would probably fail even with ruby 3.4.1
+
+To address the issue, let’s do the following:
+**Step 1:**  Uninstall rbenv
+
+```zsh
+% brew uninstall rbenv ruby-build
+% sudo rm -r ~/.rbenv
+```
+
+**Step 2**: Clean out any PATH or source modifications in `.bashrc .bashprofile .zshrc .zprofile`
+
+**Step 3**: Uninstall brew
+
+```zsh
+% /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh)"
+% sudo rm -r /opt/homebrew/
+```
+
+**Step 4**: Uninstall XCode CLT
+```zsh
+% sudo rm -rf /Library/Developer/CommandLineTools
+```
+
+**Step 5**:  Reinstall XCode CLT
+```zsh
+% sudo xcode-select --install
+% softwareupdate --all --install --force
+```
+
+**Step 6**: Reinstall brew
+```zsh
+% /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+% brew install openssl@3 readline libyaml gmp autoconf
+```
+
+**Step 7**: Make sure it can find CLT and Clang. Also don't install and link llvm, that also showed up during my research
+
+```zsh
+% brew config
+...
+Clang: 17.0.0 build 1700
+...
+CLT: 26.0.0.0.1.1757719676
+Xcode: 26.0.1
+```
+
+**Step 8**: Reinstall rbenv
+```zsh
+% brew install rbenv ruby-build
+% rbenv init
+```
+**Step 9**: Install ruby 3.4.1
+```zsh
+% rbenv install 3.4.1
+% rbenv global 3.4.1
+% which ruby
+/Users/ashis/.rbenv/shims/ruby
+```
+
+**Step 10**:  Confirm it found clang and clang++
+```zsh
+% ruby -rrbconfig -e 'puts RbConfig::CONFIG["CC"]'
+clang
+% ruby -rrbconfig -e 'puts RbConfig::CONFIG["CXX"]'
+clang++
+```
+
+**Step 11**: Finally install eventmachine
+```zsh
+% gem install eventmachine
+```
+
+**Step 12**: Finally install jekyll
+```zsh
+% gem install bundler jekyll
+...
+29 gems installed
+```
+
+
+Also, make sure to run `ruby -v` command to check if the version matches with your installation (i.e., 3.4.1). Once installed the `ruby` correctly, run the followng to install `jekyll`:
+
+
+When the jekyll is installed successfully, navigate to the project folder, the following command options are to be noted:
+* **Create a Gemfile in the root**:. The file should be called `Gemfile` and should not have any extension.
+```zsh
+% bundle init
+```
+You can create a `Gemfile` with Bundler and then add the jekyll gem:
+```zsh
+% bundle add jekyll
+```
+* Bundler installs the gems and creates a `Gemfile.lock` which locks the current gem versions for a future `bundle install`. If you ever want to update your gem versions you can run `bundle update`.
+* When using a Gemfile, you’ll run commands like `jekyll serve` with `bundle exec` prefixed. So the full command is: `bundle exec jekyll serve`
+* Also, to build/compile your project, remove items from `_site/` directory. Then, simply run: `bundle exec jekyll build`
+  - This restricts your Ruby environment to only use gems set in your Gemfile.
 
 ## Run the page locally
 
