@@ -11,7 +11,7 @@ title                    : "Dr. B"
 title_separator          : "-"
 name                     : &name "Ashis Kumer Biswas"
 description              : &description "Ashis Kumer Biswas -- Profile site"
-url                      : https://ashiskb.info # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://cse.ucdenver.edu/~biswasa # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 safe                     : true #safe mode
 repository               : "ashiskb/ashiskb.github.io"

@@ -17,16 +17,21 @@ I earned my Ph.D in Computer Science and Engineering from the [University of Tex
 <span style="color:red;font-weight:bold">Currently, I'm looking for a competitive graduate student to investigate Data-blind machine learning paradigm. If you are interested, send me an email at ashis.biswas@ucdenver.edu</span>
 
 * **Current PhD Students**
-  - [Malgorzata Schwab](https://ml.cse.ucdenver.edu/people/malgorzata_schwab/index.html)
+  - 
   - [Majed Balkheer](https://ml.cse.ucdenver.edu/people/majed_balkheer/index.html)
 * **Current MS Students**
   - Srivani Inturi
 * **Graduated PhD Students**
+  - [Malgorzata Schwab](https://ml.cse.ucdenver.edu/people/malgorzata_schwab/index.html)
+    * Dissertation title: Invertible Neural Networks for Trustworthy AI
+      - Cite as: "Schwab, M. (2024). Invertible Neural Networks for Trustworthy AI."
   - [Dr. Javier Pastorino](https://ml.cse.ucdenver.edu/people/javier_pastorino/index.html)
     * Dissertation title: Training Machine Learning Models in Various Oblivious Settings
       - Cite as: "Gonzalez, J. A. P. (2022). Training Machine Learning Models in Various Oblivious Settings (Doctoral dissertation, University of Colorado at Denver)." [ [ProQuest](https://www.proquest.com/openview/2c7a80cb9575a394e55e428225b365c8) ]
     * First job: Assistant Prof, CSE@CU Denver
 * **Graduated MS Students**
+  * Shrivani Inturi
+    - MS thesis: Spatiotemporal Forecasting of Ionospheric VTEC using Transformer Model in the Global Scale. (Fall 2024)
   * James Theiring
     - MS thesis: Bias Mitigation in Visual Models through Split-model regularization: A case study in online class participants' Engagement classification. (Fall 2022)
     - First job: IPS Strategic Capital as Data Science Specialist.
